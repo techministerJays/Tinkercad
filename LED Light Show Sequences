@@ -1,0 +1,611 @@
+//by Jayrose Bunda
+// LED Lightshow using Arduino UNO
+
+void setup()
+{
+    Serial.begin(9600);
+  	pinMode(2, OUTPUT);
+    pinMode(3, OUTPUT);
+    pinMode(4, OUTPUT);
+    pinMode(5, OUTPUT);
+    pinMode(6, OUTPUT);
+    pinMode(7, OUTPUT);
+    pinMode(8, OUTPUT);
+    pinMode(9, OUTPUT);
+    pinMode(10, OUTPUT);
+    pinMode(11, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(13, OUTPUT);
+}
+
+
+void LedLightShow1()
+{
+ 	//CICT RED (START)	
+  	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+ 	delay(200);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(4, LOW);
+ 	//CICT RED (END)	
+
+ 	//CICT BLUE (START)	
+  	digitalWrite(12, HIGH);
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	digitalWrite(3, HIGH);
+ 	delay(200);
+ 	digitalWrite(12, LOW);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(6, LOW);
+ 	digitalWrite(3, LOW);
+ 	//CICT BLUE (END)	
+
+ 	//CICT GREEN (START)	
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+ 	//CICT END (END)	
+
+  	//CICT YELLOW (START)	  
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+  	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+   	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+    digitalWrite(4, LOW);
+  	//CICT YELLOW (END)	  
+	
+	//CICT RED (START)	
+  	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+ 	delay(200);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(4, LOW);
+ 	//CICT RED (END)	
+
+ 	//CICT BLUE (START)	
+  	digitalWrite(12, HIGH);
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	digitalWrite(3, HIGH);
+ 	delay(200);
+ 	digitalWrite(12, LOW);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(6, LOW);
+ 	digitalWrite(3, LOW);
+ 	//CICT BLUE (END)	
+
+ 	//CICT GREEN (START)	
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+ 	//CICT END (END)	
+
+  	//CICT YELLOW (START)	  
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+  	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+   	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+    digitalWrite(4, LOW);
+  	//CICT YELLOW (END)	  
+//CICT RED (START)	
+  	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+ 	delay(200);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(4, LOW);
+ 	//CICT RED (END)	
+
+ 	//CICT BLUE (START)	
+  	digitalWrite(12, HIGH);
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	digitalWrite(3, HIGH);
+ 	delay(200);
+ 	digitalWrite(12, LOW);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(6, LOW);
+ 	digitalWrite(3, LOW);
+ 	//CICT BLUE (END)	
+
+ 	//CICT GREEN (START)	
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+ 	//CICT END (END)	
+
+  	//CICT YELLOW (START)	  
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+  	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+   	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+    digitalWrite(4, LOW);
+  	//CICT YELLOW (END)	  
+	
+	//CICT RED (START)	
+  	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+ 	delay(200);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(4, LOW);
+ 	//CICT RED (END)	
+
+ 	//CICT BLUE (START)	
+  	digitalWrite(12, HIGH);
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	digitalWrite(3, HIGH);
+ 	delay(200);
+ 	digitalWrite(12, LOW);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(6, LOW);
+ 	digitalWrite(3, LOW);
+ 	//CICT BLUE (END)	
+
+ 	//CICT GREEN (START)	
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+ 	//CICT END (END)	
+
+  	//CICT YELLOW (START)	  
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+  	delay(200);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(5, LOW);
+ 	digitalWrite(2, LOW);
+   	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+    digitalWrite(4, LOW);}
+  	//CICT YELLOW (END)	
+
+void LedLightShow2(){
+	//C-I-C-T YELLOW (START)
+  	digitalWrite(13, HIGH);
+ 	digitalWrite(11, HIGH);
+ 	delay(500);
+  	digitalWrite(11, LOW);
+  	digitalWrite(13, LOW);
+
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	delay(500);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(10, LOW);
+
+  	digitalWrite(7, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	delay(500);
+  	digitalWrite(7, LOW);
+ 	digitalWrite(5, LOW);
+
+  	digitalWrite(4, HIGH);
+ 	digitalWrite(2, HIGH);
+  	delay(500);
+  	digitalWrite(4, LOW);
+ 	digitalWrite(2, LOW);
+	//C-I-C-T YELLOW (END)
+
+	//C-I-C-T RED (START)  
+  	digitalWrite(13, HIGH);
+ 	delay(500);
+  	digitalWrite(13, LOW);
+
+ 	digitalWrite(10, HIGH);
+ 	delay(500);
+ 	digitalWrite(10, LOW);
+
+  	digitalWrite(7, HIGH);
+ 	delay(500);
+  	digitalWrite(7, LOW);
+
+  	digitalWrite(4, HIGH);
+  	delay(500);
+  	digitalWrite(4, LOW); 
+	//C-I-C-T RED (END)
+
+  	//C-I-C-T PURPLE (START)
+ 	digitalWrite(13, HIGH);
+ 	digitalWrite(12, HIGH);
+ 	delay(500);
+  	digitalWrite(12, LOW);
+  	digitalWrite(13, LOW);
+
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	delay(500);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(10, LOW);
+
+  	digitalWrite(7, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	delay(500);
+  	digitalWrite(7, LOW);
+ 	digitalWrite(6, LOW);
+
+  	digitalWrite(4, HIGH);
+ 	digitalWrite(3, HIGH);
+  	delay(500);
+  	digitalWrite(4, LOW);
+ 	digitalWrite(3, LOW);
+	//C-I-C-T PURPLE (END)
+  
+ 
+    //C-I-C-T LIGHT BLUE (START)
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(12, HIGH);
+ 	delay(500);
+  	digitalWrite(12, LOW);
+  	digitalWrite(11, LOW);
+
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	delay(500);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(8, LOW);
+
+  	digitalWrite(5, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	delay(500);
+  	digitalWrite(5, LOW);
+ 	digitalWrite(6, LOW);
+
+  	digitalWrite(3, HIGH);
+ 	digitalWrite(2, HIGH);
+  	delay(500);
+  	digitalWrite(3, LOW);
+  	digitalWrite(2, LOW);
+	//C-I-C-T LIGHT BLUE (END)
+
+//C-I-C-T YELLOW (START)
+  	digitalWrite(13, HIGH);
+ 	digitalWrite(11, HIGH);
+ 	delay(500);
+  	digitalWrite(11, LOW);
+  	digitalWrite(13, LOW);
+
+ 	digitalWrite(8, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	delay(500);
+ 	digitalWrite(8, LOW);
+ 	digitalWrite(10, LOW);
+
+  	digitalWrite(7, HIGH);
+ 	digitalWrite(5, HIGH);
+ 	delay(500);
+  	digitalWrite(7, LOW);
+ 	digitalWrite(5, LOW);
+
+  	digitalWrite(4, HIGH);
+ 	digitalWrite(2, HIGH);
+  	delay(500);
+  	digitalWrite(4, LOW);
+ 	digitalWrite(2, LOW);
+	//C-I-C-T YELLOW (END)
+
+	//C-I-C-T RED (START)  
+  	digitalWrite(13, HIGH);
+ 	delay(500);
+  	digitalWrite(13, LOW);
+
+ 	digitalWrite(10, HIGH);
+ 	delay(500);
+ 	digitalWrite(10, LOW);
+
+  	digitalWrite(7, HIGH);
+ 	delay(500);
+  	digitalWrite(7, LOW);
+
+  	digitalWrite(4, HIGH);
+  	delay(500);
+  	digitalWrite(4, LOW); 
+	//C-I-C-T RED (END)
+
+  	//C-I-C-T PURPLE (START)
+ 	digitalWrite(13, HIGH);
+ 	digitalWrite(12, HIGH);
+ 	delay(500);
+  	digitalWrite(12, LOW);
+  	digitalWrite(13, LOW);
+
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	delay(500);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(10, LOW);
+
+  	digitalWrite(7, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	delay(500);
+  	digitalWrite(7, LOW);
+ 	digitalWrite(6, LOW);
+
+  	digitalWrite(4, HIGH);
+ 	digitalWrite(3, HIGH);
+  	delay(500);
+  	digitalWrite(4, LOW);
+ 	digitalWrite(3, LOW);
+	//C-I-C-T PURPLE (END)
+  
+ 
+    //C-I-C-T LIGHT BLUE (START)
+ 	digitalWrite(11, HIGH);
+ 	digitalWrite(12, HIGH);
+ 	delay(500);
+  	digitalWrite(12, LOW);
+  	digitalWrite(11, LOW);
+
+ 	digitalWrite(9, HIGH);
+ 	digitalWrite(8, HIGH);
+ 	delay(500);
+ 	digitalWrite(9, LOW);
+ 	digitalWrite(8, LOW);
+
+  	digitalWrite(5, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	delay(500);
+  	digitalWrite(5, LOW);
+ 	digitalWrite(6, LOW);
+
+  	digitalWrite(3, HIGH);
+ 	digitalWrite(2, HIGH);
+  	delay(500);
+  	digitalWrite(3, LOW);
+  	digitalWrite(2, LOW);}
+	//C-I-C-T LIGHT BLUE (END)
+
+ void LedLightShow3(){ 
+  	digitalWrite(12, HIGH);
+ 	digitalWrite(3, HIGH);
+  	delay(500);
+  	digitalWrite(12, LOW);
+ 	digitalWrite(3, LOW);
+  
+  	digitalWrite(9, HIGH);
+ 	digitalWrite(6, HIGH);
+  	delay(500);
+    digitalWrite(9, LOW);
+ 	digitalWrite(6, LOW);
+ 	
+  	digitalWrite(11, HIGH);
+ 	digitalWrite(2, HIGH);
+  	delay(500);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(2, LOW);
+ 
+    digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+ 	delay(500);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(4, LOW);
+
+    digitalWrite(11, HIGH);
+    digitalWrite(13, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(5, HIGH);
+  	delay(500);
+  	digitalWrite(11, LOW);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(5, LOW);
+
+   	digitalWrite(10, HIGH);
+    digitalWrite(8, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	digitalWrite(4, HIGH);
+  	delay(500);
+  	digitalWrite(10, LOW);
+  	digitalWrite(8, LOW);
+ 	digitalWrite(2, LOW);
+ 	digitalWrite(4, LOW);
+
+   	digitalWrite(12, HIGH);
+ 	digitalWrite(6, HIGH);
+  	delay(500);
+  	digitalWrite(12, LOW);
+ 	digitalWrite(6, LOW);
+
+    digitalWrite(9, HIGH);
+   	digitalWrite(12, HIGH);
+    digitalWrite(13, HIGH);
+    digitalWrite(10, HIGH);
+ 	digitalWrite(3, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	digitalWrite(7, HIGH);
+   	digitalWrite(4, HIGH);
+  	delay(1000);
+    digitalWrite(9, LOW);
+   	digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+    digitalWrite(10, LOW);
+ 	digitalWrite(3, LOW);
+ 	digitalWrite(6, LOW);
+ 	digitalWrite(7, LOW);
+   	digitalWrite(4, LOW);
+
+	digitalWrite(12, HIGH);
+ 	digitalWrite(3, HIGH);
+  	delay(500);
+  	digitalWrite(12, LOW);
+ 	digitalWrite(3, LOW);
+  
+  	digitalWrite(9, HIGH);
+ 	digitalWrite(6, HIGH);
+  	delay(500);
+    digitalWrite(9, LOW);
+ 	digitalWrite(6, LOW);
+ 	
+  	digitalWrite(11, HIGH);
+ 	digitalWrite(2, HIGH);
+  	delay(500);
+  	digitalWrite(11, LOW);
+ 	digitalWrite(2, LOW);
+ 
+    digitalWrite(13, HIGH);
+ 	digitalWrite(10, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(4, HIGH);
+ 	delay(500);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(10, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(4, LOW);
+
+    digitalWrite(11, HIGH);
+    digitalWrite(13, HIGH);
+ 	digitalWrite(7, HIGH);
+ 	digitalWrite(5, HIGH);
+  	delay(500);
+  	digitalWrite(11, LOW);
+  	digitalWrite(13, LOW);
+ 	digitalWrite(7, LOW);
+ 	digitalWrite(5, LOW);
+
+   	digitalWrite(10, HIGH);
+    digitalWrite(8, HIGH);
+ 	digitalWrite(2, HIGH);
+ 	digitalWrite(4, HIGH);
+  	delay(500);
+  	digitalWrite(10, LOW);
+  	digitalWrite(8, LOW);
+ 	digitalWrite(2, LOW);
+ 	digitalWrite(4, LOW);
+
+   	digitalWrite(12, HIGH);
+ 	digitalWrite(6, HIGH);
+  	delay(1000);
+  	digitalWrite(12, LOW);
+ 	digitalWrite(6, LOW);
+
+    digitalWrite(9, HIGH);
+   	digitalWrite(12, HIGH);
+    digitalWrite(13, HIGH);
+    digitalWrite(10, HIGH);
+ 	digitalWrite(3, HIGH);
+ 	digitalWrite(6, HIGH);
+ 	digitalWrite(7, HIGH);
+   	digitalWrite(4, HIGH);
+  	delay(1000);
+    digitalWrite(9, LOW);
+   	digitalWrite(12, LOW);
+    digitalWrite(13, LOW);
+    digitalWrite(10, LOW);
+ 	digitalWrite(3, LOW);
+ 	digitalWrite(6, LOW);
+ 	digitalWrite(7, LOW);
+   digitalWrite(4, LOW);}
+
+void loop(){
+  
+  while (Serial.available() == 0){
+  }
+  int userinput = Serial.parseInt();
+  
+  switch(userinput) {
+    case 1:
+    	LedLightShow1();
+    	break;
+   
+    case 2:
+    	LedLightShow2();
+    	break;
+
+    case 3:
+    	LedLightShow3();
+    	break;    
+    
+    default:
+    	Serial.println("Selected Feature Does Not Exist");
+  };
+
+};  
+    
