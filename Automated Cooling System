@@ -1,0 +1,143 @@
+#include <LiquidCrystal.h> 
+#define buzzer 7
+LiquidCrystal lcd1(8, 9, 10, 11, 12, 13); 
+int redLED = 6;
+int greenLED = 5;
+int yellowLED = 4;
+int TMPsensor = A0; 
+const int Motor_pin = 3;
+int reading;
+float voltage;
+float temperatureC;
+
+void setup(){ 
+  Serial.begin(9600);  
+  lcd1.begin(16,2); 
+  pinMode(Motor_pin, OUTPUT);
+  pinMode(buzzer,OUTPUT);
+}
+
+void tempSense()
+{
+ reading = analogRead(TMPsensor);  
+ voltage = reading * 5.0;
+ voltage /= 1024.0; 
+ temperatureC = (voltage - 0.5) * 100 ; 
+ delay(500);                                
+
+}
+
+void LED_alerts()
+{
+	if (temperatureC > 37)
+    {
+      digitalWrite(greenLED, LOW);
+      digitalWrite(yellowLED, LOW);
+      digitalWrite(redLED, HIGH);
+    }
+	
+  	else if (temperatureC < 27)
+    {
+      digitalWrite(redLED, LOW);
+      digitalWrite(greenLED, LOW);
+      digitalWrite(yellowLED, HIGH);
+    }
+  
+	else if (temperatureC >= 28 && temperatureC <= 36)
+    {
+      digitalWrite(redLED, LOW);
+      digitalWrite(yellowLED, LOW);
+      digitalWrite(greenLED, HIGH);
+    } 
+}  
+
+void coolingFAN() 
+{
+	if (temperatureC > 37)
+    {
+	analogWrite(Motor_pin, 220);
+    }
+	else if (temperatureC < 27)
+    {
+	analogWrite(Motor_pin, 50);
+    }
+	else if (temperatureC >= 28 && temperatureC <= 36)
+    {
+	analogWrite(Motor_pin, 110);
+    } 
+}
+
+void displayLCD()
+{
+	if (temperatureC > 37)
+    {
+    lcd1.setCursor(4,0);
+    lcd1.print("CAUTION!");
+    lcd1.setCursor(2,2);
+    lcd1.print("Hot Room Temp   ");
+	delay(3000);
+    lcd1.clear();
+    lcd1.setCursor(3,0);
+    lcd1.print("Increasing");
+    lcd1.setCursor(4,2);
+    lcd1.print("Fan Speed");
+	delay(3000);
+    lcd1.clear();
+    }
+	else if (temperatureC < 27)
+    {
+    lcd1.setCursor(4,0);
+    lcd1.print("CAUTION!");
+    lcd1.setCursor(1,2);
+    lcd1.print("Cold Room Temp   ");
+	delay(3000);
+    lcd1.clear();
+    lcd1.setCursor(3,0);
+    lcd1.print("Decreasing");
+    lcd1.setCursor(4,2);
+    lcd1.print("Fan Speed");
+	delay(3000);
+    lcd1.clear();
+    }
+	else if (temperatureC >= 28 && temperatureC <= 36)
+    {
+	lcd1.setCursor(5,0);
+    lcd1.print("STATUS");
+    lcd1.setCursor(0,2);
+    lcd1.print("Normal Room Temp   ");
+	delay(3000);
+    lcd1.clear();
+    lcd1.setCursor(3,0);
+    lcd1.print("Maintaining");
+    lcd1.setCursor(4,2);
+    lcd1.print("Fan Speed");
+	delay(3000);
+    lcd1.clear();
+    } 
+}
+  
+void alarmBUZZER()
+{
+	if (temperatureC > 37)
+    {
+	digitalWrite(buzzer, LOW);
+    }
+	else if (temperatureC < 27)
+    {
+	digitalWrite(buzzer, LOW);
+    }
+	else if (temperatureC >= 28 && temperatureC <= 36)
+    {
+	digitalWrite(buzzer, HIGH);
+    } 
+  
+}
+
+void loop(){
+  tempSense();  
+  alarmBUZZER();
+  LED_alerts();
+  coolingFAN();
+  displayLCD();
+}
+  
